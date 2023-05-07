@@ -1,0 +1,136 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #D5B4B4 ,#E4D0D0);
+
+}
+.warpper {
+
+    display: inline-flex;
+}
+
+.warpper .icon {
+
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.warpper .icon span{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+}
+
+.warpper .icon span i{
+
+    font-size: 25px;
+    line-height: 60px;
+}
+.warpper .icon .title{
+    position: absolute;
+    top: 0px;
+    font-size: 25px;
+    background-color: #fff;
+    padding:10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.warpper .icon:hover .title {
+    top: -75px;
+
+    opacity: 1;
+    pointer-events: auto
+    ;
+} 
+
+.warpper .icon .title::before{
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+
+
+
+.warpper .icon:hover span i {
+
+    color: #fff;
+}
+
+
+.warpper .icon:hover .title {
+
+    color: #fff;
+}
+
+
+.warpper .icon:hover span,
+.warpper .icon:hover .title {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+} 
+
+
+.warpper .facebook:hover span,
+.warpper .facebook:hover .title,
+.warpper .facebook:hover .title::before {
+background-color: #3B5999;} 
+
+
+.warpper .linkedin:hover span,
+.warpper .linkedin:hover .title,
+.warpper .linkedin:hover .title::before {
+background-color: #3b4e77;} 
+
+
+.warpper .Github:hover span,
+.warpper .Github:hover .title,
+.warpper .Github:hover .title::before {
+background-color: #333;} 
+
+
+.warpper .instagram:hover span,
+.warpper .instagram:hover .title,
+.warpper .instagram:hover .title::before {
+background-color: #e1306c;} 
+
+
+.warpper .youtube:hover span,
+.warpper .youtube:hover .title,
+.warpper .youtube:hover .title::before {
+background-color: #DE463B;} 
+
